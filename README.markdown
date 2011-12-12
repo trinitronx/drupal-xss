@@ -13,10 +13,10 @@ Risk for phishing is HIGH, emails are auto-generated with links to the update pa
 Insertion of links to attacker's website is possible in these places:
 
  - "Recent log messages" page in Drupal's administration console
- - Many script tag 'src' attributes in 404 pages returned to the user in the case of a MITM attacker
-   For this case, the attacker must have MITM and re-write the Host: header to point to their own domain.
-   No proxy-like requests necessary!
-   Presumably they would host a drupal site with some payload scripts installed in the place of some of the normal drupal scripts.
+ - Many script tag 'src' attributes in pages returned to the user in the case of a MITM attacker
+   - For this case, the attacker must have MITM and re-write the Host: header to point to their own domain.
+   - No proxy-like requests necessary!
+   - Presumably they would host a drupal site with some payload scripts installed in the place of some of the normal drupal scripts.
  - Automatic site update emails sent to admin user (Value of Host: header is used)
 
 For sample output of the MITM type attack, see comments in drupal-xss.c
